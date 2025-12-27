@@ -1,0 +1,62 @@
+---- SQL - Structured Query Language is a standard language used in stored , managed data, update, delete in relational database
+
+---- Sql is a case sensitive 
+----- different meaning of SELETE  or SELETE
+
+------ SQL type database is organized collection of Data 
+
+id    name    subject 
+
+##  -------------------- what is used of SQL 
+- Fetched data 
+- Stored data 
+- manage data
+- update data 
+- delete data 
+- Data control 
+- access and security 
+
+
+## ----------------- how SQL works 
+1. used for write SQL Query 
+
+-- EX : SELECT * FROM students;
+
+2. SQL engine process the query 
+
+- check the syntax, validation, permission, security, controls, access,....
+
+3. if everything going floe than database execute query 
+
+
+Basic Commands of SQL 
+1. Create table 
+- Data definition language 
+
+CREATE TABLE students (
+    id INT, 
+    name  VARCHAR(200), 
+    course VARCHAR(50), 
+    marks INT, 
+    Age INT
+)
+
+2. INSERT DATA 
+-  Data manipulation language
+INSERT INTO students VALUES (1, 'xxx', 'MERN STACK', 85, 22);
+
+3. FETCH DATA
+
+SELECT name, marks FROM students
+
+4. UPDATE DATA 
+-  Data manipulation language
+UPDATE students SET marks = 90 WHERE id = 1;
+
+5. DELETE DATA 
+
+DELETE FROM students WHERE id = 1;
+
+
+
+
