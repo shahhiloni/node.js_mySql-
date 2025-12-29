@@ -15,6 +15,7 @@
     "express": "^5.2.1",
     "fs": "^0.0.1-security",
     "http": "^0.0.1-security",
+    "mysql2": "^3.16.0",
     "nodemon": "^3.1.11",
     "os": "^0.1.2",
     "sql": "^0.78.0"
