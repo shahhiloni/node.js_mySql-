@@ -1,0 +1,19 @@
+CREATE DATABASE FS_mysql;
+USE FS_mysql;
+
+CREATE TABLE students (
+    id INT AUTO_INCREMENT PRIMARY KEY, 
+    name VARCHAR(100), 
+    email VARCHAR(100), 
+    Phone INT(10),
+)
+
+
+types of Keys in Mysql 
+
+1. primary key : its a autogenerate, autoIncremented, 
+- Primary key never null
+
+2. Foreign key : never become null 
+
+
