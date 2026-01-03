@@ -1,5 +1,5 @@
-CREATE DATABASE FS_mysql;
-USE FS_mysql;
+CREATE DATABASE Full_Stack;
+USE Full_Stack;
 
 CREATE TABLE students (
     id INT AUTO_INCREMENT PRIMARY KEY, 
