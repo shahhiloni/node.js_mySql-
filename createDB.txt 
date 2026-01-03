@@ -14,6 +14,15 @@ types of Keys in Mysql
 1. primary key : its a autogenerate, autoIncremented, 
 - Primary key never null
 
-2. Foreign key : never become null 
+2. Foreign Key : A foreign key is a column or group of columns in one table that refers to the primary key of another table. 
+- it is used to create a relationship between two tables and maintain data integrity.
+
+Foreign key = connection between tables 
+
+## why we use Foreign key in Mysql 
+- to link related data across tables 
+- to avoid invalid data 
+- to maintain referential integrity
+
 
 
