@@ -24,5 +24,3 @@ Foreign key = connection between tables
 - to avoid invalid data 
 - to maintain referential integrity
 
-
-
