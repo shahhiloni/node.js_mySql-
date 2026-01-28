@@ -77,3 +77,9 @@ xxxxx.yyyyy.zzzzz
 
 // what is difference between authentication and authorization
 
+
+Register → Save hashed password
+Login → Verify password → Generate JWT
+Frontend → Store token
+API → Verify token → Allow access
+
