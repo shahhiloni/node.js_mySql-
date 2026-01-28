@@ -1,6 +1,10 @@
 const bcrypt = require("bcrypt");
 const express = require("express");
 const connection = require("./connection");
+const jwt = require("jsonwebtoken");
+const dotenv = require("dotenv");
+
+dotenv.config();
 
 const app = express();
 app.use(express.json());
@@ -27,8 +31,17 @@ connection.query(
             return res.status(401).json({message: "invalid password"});
         }
 
+const token = jwt.sign (
+    {
+        id: result[0].id,
+        email: result[0].email
+    }, 
+    process.env.JWT_SECRET, 
+    {expiresIn: "1h"}
+)        
         res.status(200).json({
             message: "user login successfully", 
+            token: token,
             register: {
                 id: result[0].id,
                 name: result[0].name, 
