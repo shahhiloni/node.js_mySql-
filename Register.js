@@ -29,7 +29,6 @@ app.post("/register", async (req, res) => {
             .json({ message: "Email address already exists" });
         }
 
-
         const hashedPassword = await bcrypt.hash(password, 10);
 
         connection.query(
