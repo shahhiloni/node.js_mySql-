@@ -83,3 +83,34 @@ Login → Verify password → Generate JWT
 Frontend → Store token
 API → Verify token → Allow access
 
+// Foreign key : building relation between two table or more than two tables 
+- Note: only For relational database
+
+- Foreign_key : valid data or actual data and never null 
+Note : it can be null when data is not exist 
+
+
+Parent table : Register
+child table : students 
+
+relation : register.id -> students.user_id
+
+//// DROP QUERY 
+
+ALTER TABLE Table_name 
+DROP FOREIGN KEY fk_student_user;
+
+/// Foreign_key query 
+
+step : 1 : add column for Foreign key 
+
+ALTER TABLE Table_name 
+ADD  COLUMN user_id INT;
+
+step : 2 : 
+
+ALTER TABLE Table_name 
+ADD CONSTRAINT fk_student_user (// key name = fk_student_user and CONSTRAINT is rule of making foreign key name and use for error droping)
+FOREIGN KEY (Foreign_key name)
+REFERENCES register(id);
+
